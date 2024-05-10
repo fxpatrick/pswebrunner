@@ -1,0 +1,15 @@
+@model string
+
+<form method="post">
+    <div>
+        <label for="scriptPath">Enter PowerShell script path:</label>
+        <input type="text" id="scriptPath" name="scriptPath" value="@Model" />
+    </div>
+    <button type="submit">Run PowerShell Script</button>
+</form>
+
+@if (!string.IsNullOrEmpty(ViewBag.Output))
+{
+    <h4>PowerShell Script Output:</h4>
+    <pre>@ViewBag.Output</pre>
+}
