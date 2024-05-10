@@ -64,5 +64,31 @@ namespace YourNamespace.Controllers
                 return View("RunScript", scriptPath);
             }
         }
+        private readonly ScriptDbContext _context;
+
+        public PowerShellController(ScriptDbContext context)
+        {
+            _context = context;
+        }
+
+        [HttpGet]
+        public IActionResult RunScript()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> RunScript(RunScriptViewModel model)
+        {
+            if (ModelState.IsValid)
+            {
+                var scriptPath = new ScriptPath { Path = model.ScriptPath };
+                _context.ScriptPaths.Add(scriptPath);
+                await _context.SaveChangesAsync();
+                return RedirectToAction("Index", "Home"); // Redirect to home or another page
+            }
+
+            return View(model);
+        }
     }
 }
