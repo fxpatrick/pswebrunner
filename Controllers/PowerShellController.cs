@@ -3,8 +3,11 @@ using System.Diagnostics;
 using System.IO;
 using System.Text;
 using System.Threading.Tasks;
+using pswebrunner.ViewModels;
+using pswebrunner.Models;
 
-namespace YourNamespace.Controllers
+
+namespace pswebrunner.Controllers
 {
     public class PowerShellController : Controller
     {
@@ -71,24 +74,7 @@ namespace YourNamespace.Controllers
             _context = context;
         }
 
-        [HttpGet]
-        public IActionResult RunScript()
-        {
-            return View();
-        }
 
-        [HttpPost]
-        public async Task<IActionResult> RunScript(RunScriptViewModel model)
-        {
-            if (ModelState.IsValid)
-            {
-                var scriptPath = new ScriptPath { Path = model.ScriptPath };
-                _context.ScriptPaths.Add(scriptPath);
-                await _context.SaveChangesAsync();
-                return RedirectToAction("Index", "Home"); // Redirect to home or another page
-            }
-
-            return View(model);
-        }
+        
     }
 }

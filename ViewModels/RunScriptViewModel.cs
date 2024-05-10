@@ -1,4 +1,4 @@
-namespace YourNamespace.ViewModels
+namespace pswebrunner.ViewModels
 {
     public class RunScriptViewModel
     {

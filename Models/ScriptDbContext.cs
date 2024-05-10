@@ -1,6 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 
-namespace YourNamespace.Models
+namespace pswebrunner.Models
 {
     public class ScriptDbContext : DbContext
     {

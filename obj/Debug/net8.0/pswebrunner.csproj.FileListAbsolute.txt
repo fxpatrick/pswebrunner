@@ -28,3 +28,8 @@ D:\mvc\pswebrunner\obj\Debug\net8.0\refint\pswebrunner.dll
 D:\mvc\pswebrunner\obj\Debug\net8.0\pswebrunner.pdb
 D:\mvc\pswebrunner\obj\Debug\net8.0\pswebrunner.genruntimeconfig.cache
 D:\mvc\pswebrunner\obj\Debug\net8.0\ref\pswebrunner.dll
+D:\mvc\pswebrunner\obj\Debug\net8.0\pswebrunner.sourcelink.json
+D:\mvc\pswebrunner\obj\Debug\net8.0\pswebrunner.csproj.AssemblyReference.cache
+D:\mvc\pswebrunner\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+D:\mvc\pswebrunner\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\mvc\pswebrunner\obj\Debug\net8.0\pswebrun.02E35820.Up2Date
