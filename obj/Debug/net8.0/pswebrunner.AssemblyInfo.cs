@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("pswebrunner")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+577668e50a5319782df1fea4d6164aa41cd0afab")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ee3ec3e0534c926d9749f0150c1d1e3ac988df90")]
 [assembly: System.Reflection.AssemblyProductAttribute("pswebrunner")]
 [assembly: System.Reflection.AssemblyTitleAttribute("pswebrunner")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
